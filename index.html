@@ -1,169 +1,184 @@
 <html lang="en">
-    <meta charset="UTF-8">
-    <title>Mini Project 5</title>
+<meta charset="UTF-8">
+<title>Mini Project 5</title>
 <link href='https://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <style>
-html {
-  background: url(Background.jpeg);
-  background-size: cover;
-}
-body {
-  background: white;
-  opacity: 0.8;
-  margin: auto;
-  width: 80%;
-  text-align: center ;
-}
-article {
-  font-size: 140%;
-}
-/*Below here, I'm styling my links*/
-a {
-  text-decoration: none;
-  color: white;
-}
-/*Here's my example of using a pseudo class selector*/
-a:hover {
-  text-decoration: underline;
-}
-/*This is where I use positioning to make my Home and About buttons look like they are inside of the header*/
-#up {
-  margin: auto;
-  font-size: 230%;
-  position: relative;
-  top: -25px;
-}
-header {
-  background: radial-gradient(circle, #1443C1, #819BE4 );
-  height: 200px;
-  color: white;
-}
-h1 {
-  padding-top: 10px;
-  margin-top: 1px;
-  opacity: 1;
-}
-footer {
-  background: #5779D6;
-}
-/*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
-#upperMost {
-  overflow: auto;
-}
-/*Here's where I use the float property*/
-#cube {
-  max-width: 120px;
-  float: right;
-}
-#horse {
-  max-width: 90px;
-  float: left;
-  margin-right: 1px;
-}
-/*Here's my example of using a psuedo-element*/
-article > p::first-letter {
-  font-size: 130%;
-}
-/*Here's my example of using a border and padding*/
-#pic {
-  width:80%;
-  max-width: 900px;
-  padding-top: 15px;
-  margin: auto;
-}
-#painting {
-  border: 10px outset #819BE4;
-}
-/*This is where I make an element invisible by using "display: none"*/
-#secret {
-  display: none;
-}
-/*This is where I use the outline and dimension properties, as well as it being one of the many examples of the margin being used*/
-#list {
-  outline: #819BE4 double thick;
-  margin: auto;
-  max-width: 200px;
-}
-/*This is where I style my list with the other style bullet points*/
-ul{
-  list-style-type: circle;
-}
-.up {
-  position: relative;
-  top: -30px;
-}
-/*Here's where I use text alignment*/
-table {
-  margin: auto;
-  text-align: center;
-}
-/*Here's an example of a combination selector*/
-article > p {
-  font-size: 100%;
-  max-width: 70%;
-  margin: auto;
-}
-#piccap {
-  position: relative;
-  top: -4px;
-  font-size: 70%;
-}
+    html {
+        background: url(Background.jpeg);
+        background-size: cover;
+    }
+
+    body {
+        background: white;
+        opacity: 0.8;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    article {
+        font-size: 140%;
+    }
+    /*Below here, I'm styling my links*/
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    /*Here's my example of using a pseudo class selector*/
+
+    a:hover {
+        text-decoration: underline;
+    }
+    /*This is where I use positioning to make my Home and About buttons look like they are inside of the header*/
+
+    #up {
+        margin: auto;
+        font-size: 230%;
+        position: relative;
+        top: -25px;
+    }
+
+    header {
+        background: radial-gradient(circle, #1443C1, #819BE4);
+        height: 200px;
+        color: white;
+    }
+
+    h1 {
+        padding-top: 10px;
+        margin-top: 1px;
+        opacity: 1;
+    }
+
+    footer {
+        background: #5779D6;
+    }
+    /*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
+
+    #upperMost {
+        overflow: auto;
+    }
+    /*Here's where I use the float property*/
+
+    #cube {
+        max-width: 120px;
+        float: right;
+    }
+
+    #horse {
+        max-width: 90px;
+        float: left;
+        margin-right: 1px;
+    }
+    /*Here's my example of using a psuedo-element*/
+
+    article > p::first-letter {
+        font-size: 130%;
+    }
+    /*Here's my example of using a border and padding*/
+
+    #pic {
+        width: 80%;
+        max-width: 900px;
+        padding-top: 15px;
+        margin: auto;
+    }
+
+    #painting {
+        border: 8px outset #819BE4;
+    }
+
+
+    #list {
+        position: relative;
+        left: 20px;
+        margin: auto;
+        max-width: 200px;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+
+    ul li {
+        text-align: left;
+    }
+
+    .up {
+        position: relative;
+        top: -30px;
+    }
+    /*Here's where I use text alignment*/
+
+    table {
+        margin: auto;
+        text-align: center;
+    }
+    /*Here's an example of a combination selector*/
+
+    article > p {
+        font-size: 100%;
+        max-width: 70%;
+        margin: auto;
+    }
+
+    #piccap {
+        position: relative;
+        top: -4px;
+        font-size: 70%;
+    }
 </style>
+
 <body>
     <header>
-       <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
-       <i class="fa fa-cube up" style="font-size: 350%"></i>
-       <nav>
-         <!--Right here is where I make my navigation elements. I don't do it exactly like W3 schools does it, but mine works perfectly fine and looks the way I want it to look, for now. Maybe you could give me your input about it.-->
-         <p id="up"><a href="#">Home</a> &nbsp <a href="#">About</a></p>
-       </nav>
-     </header>
+        <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
+        <i class="fa fa-cube up" style="font-size: 350%"></i>
+        <nav>
+            <!--Right here is where I make my navigation elements. I don't do it exactly like W3 schools does it, but mine works perfectly fine and looks the way I want it to look, for now. Maybe you could give me your input about it.-->
+            <p id="up"><a href="#">Home</a> &nbsp <a href="#">About</a></p>
+        </nav>
+    </header>
 
-     <article>
-       <h3>Welcome to the Cube Test!</h3>
-       <p id="upperMost"><img id="horse" src="Full%20Horse.jpeg" alt="Horse" />A couple years ago, I was introduced to the cube test by a friend.
-         It's not the type of test that you need to worry about passing. It's just like those personality tests
-         that you might see in a magazine or something. I don't know if it's accurate, but it's definitely
-         a fun test to put your friends through at parties. </p>
+    <article>
+        <h3>Welcome to the Cube Test!</h3>
+        <p id="upperMost"><img id="horse" src="Full%20Horse.jpeg" alt="Horse" />A couple years ago, I was introduced to the cube test by a friend. It's not the type of test that you need to worry about passing. It's just like those personality tests that you might see in a magazine or something. I don't know if it's accurate, but it's definitely a fun test to put your friends through at parties. </p>
 
-       <h3>What is the Cube Test?</h3>
+        <h3>What is the Cube Test?</h3>
 
-         <p><img src="Cube.jpeg" alt="" id="cube" />The cube test involves two people, a participant and a guide. The guide will ask a series of questions
-         to the participant which will cause the participant to imagine a desert with various elements.
-         These elements, in turn, represent various aspects of the participants life, such as their:
-         <div id="list">
-           <ul>
-             <li>Friends</li>
-             <li>Love</li>
-             <li>Attitude</li>
-             <li>Emotions</li>
-           </ul>
-         </div>
-       </p>
-       <p>After the test is over, it is the guide's job to translate the elements of the participant's desert
-       into those four aspects of the participant's life.</p>
-       <!--Here's another example of an inline styling-->
-       <div id="pic">
-         <img id="painting" src="Desert%20with%20Clouds.jpeg"
-              alt="Desert Picture" width="95%">
-       </div>
-       <em id="piccap">You will imagine a desert with a cube, ladder and horse during the test.</em>
-       <br>
-     </article>
-    <p id="secret">I'm a secret</p>
-     <footer>
+        <p><img src="Cube.jpeg" alt="" id="cube" />The cube test involves two people, a participant and a guide. The guide will ask a series of questions to the participant which will cause the participant to imagine a desert with various elements. These elements, in turn, represent various aspects of the participants life, such as their:
+            <div id="list">
+                <ul>
+                    <li>Friends</li>
+                    <li>Love</li>
+                    <li>Attitude</li>
+                    <li>Emotions</li>
+                </ul>
+            </div>
+        </p>
+        <p>After the test is over, it is the guide's job to translate the elements of the participant's desert into those four aspects of the participant's life.</p>
+        <!--Here's another example of an inline styling-->
+        <div id="pic">
+            <img id="painting" src="Desert%20with%20Clouds.jpeg" alt="Desert Picture" width="95%">
+        </div>
+        <em id="piccap">You will imagine a desert with a cube, ladder and horse during the test.</em>
+        <br>
+    </article>
+
+    <footer>
         <table>
-          <tr>
-          <td>Copyright Info</td>
-          </tr>
-          <tr>
-           <td>This webpage was coded by Daniel Musser</td>
-           </tr>
-          <tr>
-          <td class="foot">The Cube Test is not an original idea of the creator of this website.</td>
-          </tr>
-         </table>
-     </footer>
+            <tr>
+                <td>Copyright Info</td>
+            </tr>
+            <tr>
+                <td>This webpage was coded by Daniel Musser</td>
+            </tr>
+            <tr>
+                <td class="foot">The Cube Test is not an original idea of the creator of this website.</td>
+            </tr>
+        </table>
+    </footer>
 </body>
+
 </html>
