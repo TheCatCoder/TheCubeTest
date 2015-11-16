@@ -1,0 +1,112 @@
+<html lang="en">
+<meta charset="UTF-8">
+<title>Mini Project 5</title>
+<link href='https://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+    html {
+        background: url(LightBackground.jpg);
+        background-size: cover;
+    }
+
+    body {
+        background: white;
+        opacity: 0.8;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
+
+    article {
+        font-size: 140%;
+    }
+    /*Below here, I'm styling my links*/
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    /*Here's my example of using a pseudo class selector*/
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    .up {
+        position: relative;
+        top: -30px;
+    }
+
+    #up {
+        margin: auto;
+        font-size: 230%;
+        position: relative;
+        top: -25px;
+    }
+
+    header {
+        background: radial-gradient(circle, #1443C1, #819BE4);
+        height: 200px;
+        color: white;
+    }
+
+    h1 {
+        padding-top: 10px;
+        margin-top: 1px;
+        opacity: 1;
+    }
+
+    footer {
+        background: #5779D6;
+    }
+
+    main > p {
+        font-size: 120%;
+        max-width: 70%;
+        margin: auto;
+    }
+
+    img {
+        margin-top: 15px;
+        border: 8px outset #819BE4;
+    }
+
+    table {
+        margin: auto;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <header>
+        <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
+        <i class="fa fa-cube up" style="font-size: 350%"></i>
+        <nav>
+            <!--Right here is where I make my navigation elements. I don't do it exactly like W3 schools does it, but mine works perfectly fine and looks the way I want it to look, for now. Maybe you could give me your input about it.-->
+            <p id="up"><a href="#">Home</a> &nbsp <a href="#">About</a></p>
+        </nav>
+    </header>
+    <Main>
+        <img src="Me%20at%20Home.jpg" alt="Picture of Me" width="20%">
+        <h2>About Me</h2>
+        <p>My name is Daniel Musser. I grew up and currently live in Utah. I love working with computers in many different ways. I created this website called "The Cube Test" as a school project. I originally came up with the idea to do it because a friend of mine texted me one day and was trying to remember how to walk someone through a personality test, called "The Cube Test". I thought it would be helpful to have a place where everybody can go and learn it if they want.</p>
+        <br>
+        <p>Apart from coding, I really enjoy playing the Violin and Guitar in my free time. I play in a multinational band called "Phonagraph Blue".</p>
+    </Main>
+
+    <footer>
+        <table>
+            <tr>
+                <td>Copyright Info</td>
+            </tr>
+            <tr>
+                <td>This webpage was coded by Daniel Musser</td>
+            </tr>
+            <tr>
+                <td>The Cube Test is not an original idea of the creator of this website.</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+
+</html>
