@@ -124,6 +124,21 @@
         margin: auto;
     }
 
+    #button {
+        max-width: 20%;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 25px;
+	    border: 8px outset #819BE4;
+        background-color: #1443C1;
+        color: white;
+        font-size: 130%;
+}
+
+    #button p {
+        margin: 5px;
+}
+
     #piccap {
         position: relative;
         top: -4px;
@@ -158,8 +173,13 @@
                 </ul>
             </div>
         </p>
-        <p>After the test is over, it is the guide's job to translate the elements of the participant's desert into those four aspects of the participant's life.</p>
-        <!--Here's another example of an inline styling-->
+        <p>After the test is over, it is the guide's job to translate
+        the elements of the participant's desert into those
+        four aspects of the participant's life.</p>
+
+        <!--This is my Javascript button-->
+        <div id="button"><p onmouseover="hoverChange()">Take the Test?</p></div>
+
         <div id="pic">
             <img id="painting" src="Desert%20with%20Clouds.jpeg" alt="Desert Picture" width="95%">
         </div>
