@@ -208,14 +208,16 @@
         $(document).ready(function () {
             $("#hider").hide();
 
-            $("#button").mouseenter(function () {
-                $("#hider").fadeIn(1000).show();
-                $("#firstVisible").fadeOut(1000).hide();
-            });
-//            $("#button").mouseleave(function () {
-//                $("#firstVisible").fadein(1000).show();
-//                $("#hider").fadeOut(1000).hide();
-//            });
+            $("#button").hover(
+                function () {
+                    $("#hider").fadeIn(1000).show();
+                    $("#firstVisible").fadeOut(500).hide();
+                },
+                function () {
+                    $("#firstVisible").fadeIn(500).show();
+                    $("#hider").hide();
+                }
+            );
         });
     </script>
 
