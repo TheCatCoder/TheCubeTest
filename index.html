@@ -3,6 +3,9 @@
 <title>The Cube Test</title>
 <link href='https://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js"></script>
+
+
 <style>
     html {
         background: url(LightBackground.jpg);
@@ -90,7 +93,6 @@
         border: 8px outset #819BE4;
     }
 
-
     #list {
         position: relative;
         left: 20px;
@@ -129,15 +131,15 @@
         margin: auto;
         margin-top: 30px;
         margin-bottom: 25px;
-	    border: 8px outset #819BE4;
+        border: 8px outset #819BE4;
         background-color: #1443C1;
         color: white;
         font-size: 130%;
-}
+    }
 
     #button p {
         margin: 5px;
-}
+    }
 
     #piccap {
         position: relative;
@@ -152,8 +154,7 @@
         <i class="fa fa-cube up" style="font-size: 350%"></i>
         <nav>
             <!--Right here is where I make my navigation elements. I don't do it exactly like W3 schools does it, but mine works perfectly fine and looks the way I want it to look, for now. Maybe you could give me your input about it.-->
-            <p id="up"><a href="http://spandan22.github.io/TheCubeTest/">Home</a>
-            &nbsp <a href="AboutMe.html">About</a></p>
+            <p id="up"><a href="http://spandan22.github.io/TheCubeTest/">Home</a> &nbsp <a href="AboutMe.html">About</a></p>
         </nav>
     </header>
 
@@ -173,12 +174,13 @@
                 </ul>
             </div>
         </p>
-        <p>After the test is over, it is the guide's job to translate
-        the elements of the participant's desert into those
-        four aspects of the participant's life.</p>
+        <p>After the test is over, it is the guide's job to translate the elements of the participant's desert into those four aspects of the participant's life.</p>
 
         <!--This is my Javascript button-->
-        <div id="button" onmouseover="hoverChange()"><p>Take the Test?</p></div>
+        <div id="button">
+            <p id="firstVisible">Take the Test?</p>
+            <p id="hider">To the Cube?</p>
+        </div>
 
         <div id="pic">
             <img id="painting" src="Desert%20with%20Clouds.jpeg" alt="Desert Picture" width="95%">
@@ -201,6 +203,22 @@
             </tr>
         </table>
     </footer>
+
+    <script>
+        $(document).ready(function () {
+            $("#hider").hide();
+
+            $("#button").mouseenter(function () {
+                $("#hider").fadeIn(1000).show();
+                $("#firstVisible").fadeOut(1000).hide();
+            });
+//            $("#button").mouseleave(function () {
+//                $("#firstVisible").fadein(1000).show();
+//                $("#hider").fadeOut(1000).hide();
+//            });
+        });
+    </script>
+
 </body>
 
 </html>
