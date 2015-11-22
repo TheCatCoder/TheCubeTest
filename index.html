@@ -4,156 +4,15 @@
 <link href='https://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
 <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
 <script src="https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js"></script>
-
-
-<style>
-    html {
-        background: url(LightBackground.jpg);
-        background-size: cover;
-    }
-
-    body {
-        background: white;
-        opacity: 0.8;
-        margin: auto;
-        width: 80%;
-        text-align: center;
-    }
-
-    article {
-        font-size: 140%;
-    }
-    /*Below here, I'm styling my links*/
-
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    /*Here's my example of using a pseudo class selector*/
-
-    a:hover {
-        text-decoration: underline;
-    }
-    /*This is where I use positioning to make my Home and About buttons look like they are inside of the header*/
-
-    #up {
-        margin: auto;
-        font-size: 230%;
-        position: relative;
-        top: -25px;
-    }
-
-    header {
-        background: radial-gradient(circle, #1443C1, #819BE4);
-        height: 200px;
-        color: white;
-    }
-
-    h1 {
-        padding-top: 10px;
-        margin-top: 1px;
-        opacity: 1;
-    }
-
-    footer {
-        background: #5779D6;
-    }
-    /*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
-
-    #upperMost {
-        overflow: auto;
-    }
-    /*Here's where I use the float property*/
-
-    #cube {
-        max-width: 120px;
-        float: right;
-    }
-
-    #horse {
-        max-width: 90px;
-        float: left;
-        margin-right: 1px;
-    }
-    /*Here's my example of using a psuedo-element*/
-
-    article > p::first-letter {
-        font-size: 130%;
-    }
-    /*Here's my example of using a border and padding*/
-
-    #pic {
-        width: 80%;
-        max-width: 900px;
-        padding-top: 15px;
-        margin: auto;
-    }
-
-    #painting {
-        border: 8px outset #819BE4;
-    }
-
-    #list {
-        position: relative;
-        left: 20px;
-        margin: auto;
-        max-width: 200px;
-    }
-
-    ul {
-        list-style-type: circle;
-    }
-
-    ul li {
-        text-align: left;
-    }
-
-    .up {
-        position: relative;
-        top: -30px;
-    }
-    /*Here's where I use text alignment*/
-
-    table {
-        margin: auto;
-        text-align: center;
-    }
-    /*Here's an example of a combination selector*/
-
-    article > p {
-        font-size: 100%;
-        max-width: 70%;
-        margin: auto;
-    }
-
-    #button {
-        max-width: 20%;
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 25px;
-        border: 8px outset #819BE4;
-        background-color: #1443C1;
-        color: white;
-        font-size: 130%;
-    }
-
-    #button p {
-        margin: 5px;
-    }
-
-    #piccap {
-        position: relative;
-        top: -4px;
-        font-size: 70%;
-    }
-</style>
+<script src="main.js"></script>
+<link rel="stylesheet" href="main.css">
 
 <body>
     <header>
         <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
         <i class="fa fa-cube up" style="font-size: 350%"></i>
+
         <nav>
-            <!--Right here is where I make my navigation elements. I don't do it exactly like W3 schools does it, but mine works perfectly fine and looks the way I want it to look, for now. Maybe you could give me your input about it.-->
             <p id="up"><a href="http://spandan22.github.io/TheCubeTest/">Home</a> &nbsp <a href="AboutMe.html">About</a></p>
         </nav>
     </header>
@@ -203,24 +62,6 @@
             </tr>
         </table>
     </footer>
-
-    <script>
-        $(document).ready(function () {
-            $("#hider").hide();
-
-            $("#button").hover(
-                function () {
-                    $("#hider").fadeIn(1000).show();
-                    $("#firstVisible").fadeOut(500).hide();
-                },
-                function () {
-                    $("#firstVisible").fadeIn(500).show();
-                    $("#hider").hide();
-                }
-            );
-        });
-    </script>
-
 </body>
 
 </html>
