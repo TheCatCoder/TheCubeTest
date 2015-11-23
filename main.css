@@ -1,139 +1,94 @@
 html {
-        background: url(LightBackground.jpg);
-        background-size: cover;
-    }
+    background: url(LightBackground.jpg);
+    background-size: cover;
+}
 
-    body {
-        background: white;
-        opacity: 0.8;
-        margin: auto;
-        width: 80%;
-        text-align: center;
-    }
+body {
+    background: white;
+    opacity: 0.8;
+    margin: auto;
+    width: 80%;
+    text-align: center;
+}
 
-    article {
-        font-size: 140%;
-    }
-    /*Below here, I'm styling my links*/
+article {
+    font-size: 140%;
+}
 
-    a {
-        text-decoration: none;
-        color: white;
-    }
-    /*Here's my example of using a pseudo class selector*/
 
-    a:hover {
-        text-decoration: underline;
-    }
-    /*This is where I use positioning to make my Home and About buttons look like they are inside of the header*/
+/*Below here, I'm styling my links*/
 
-    #up {
-        margin: auto;
-        font-size: 230%;
-        position: relative;
-        top: -25px;
-    }
+a {
+    text-decoration: none;
+    color: white;
+}
 
-    header {
-        background: radial-gradient(circle, #1443C1, #819BE4);
-        height: 200px;
-        color: white;
-    }
 
-    h1 {
-        padding-top: 10px;
-        margin-top: 1px;
-        opacity: 1;
-    }
+/*Here's my example of using a pseudo class selector*/
 
-    footer {
-        background: #5779D6;
-    }
-    /*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
+a:hover {
+    text-decoration: underline;
+}
 
-    #upperMost {
-        overflow: auto;
-    }
-    /*Here's where I use the float property*/
 
-    #cube {
-        max-width: 120px;
-        float: right;
-    }
+/*This is where I use positioning to make my Home and About buttons look like they are inside of the header*/
+.up {
+    position: relative;
+    top: -30px;
+}
 
-    #horse {
-        max-width: 90px;
-        float: left;
-        margin-right: 1px;
-    }
-    /*Here's my example of using a psuedo-element*/
+#up {
+    margin: auto;
+    font-size: 230%;
+    position: relative;
+    top: -25px;
+}
 
-    article > p::first-letter {
-        font-size: 130%;
-    }
-    /*Here's my example of using a border and padding*/
+header {
+    background: radial-gradient(circle, #1443C1, #819BE4);
+    height: 200px;
+    color: white;
+}
 
-    #pic {
-        width: 80%;
-        max-width: 900px;
-        padding-top: 15px;
-        margin: auto;
-    }
+h1 {
+    padding-top: 10px;
+    margin-top: 1px;
+    opacity: 1;
+}
 
-    #painting {
-        border: 8px outset #819BE4;
-    }
+footer {
+    background: #5779D6;
+}
 
-    #list {
-        position: relative;
-        left: 20px;
-        margin: auto;
-        max-width: 200px;
-    }
 
-    ul {
-        list-style-type: circle;
-    }
+/*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
 
-    ul li {
-        text-align: left;
-    }
+article > p::first-letter {
+    font-size: 130%;
+}
 
-    .up {
-        position: relative;
-        top: -30px;
-    }
-    /*Here's where I use text alignment*/
+table {
+    margin: auto;
+    text-align: center;
+}
 
-    table {
-        margin: auto;
-        text-align: center;
-    }
-    /*Here's an example of a combination selector*/
+article > p {
+    font-size: 100%;
+    max-width: 70%;
+    margin: auto;
+}
 
-    article > p {
-        font-size: 100%;
-        max-width: 70%;
-        margin: auto;
-    }
+#button {
+    max-width: 20%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 25px;
+    border: 8px outset #819BE4;
+    background-color: #1443C1;
+    color: white;
+    font-size: 130%;
+}
 
-    #button {
-        max-width: 20%;
-        margin: auto;
-        margin-top: 30px;
-        margin-bottom: 25px;
-        border: 8px outset #819BE4;
-        background-color: #1443C1;
-        color: white;
-        font-size: 130%;
-    }
-
-    #button p {
-        margin: 5px;
-    }
-
-    #piccap {
-        position: relative;
-        top: -4px;
-        font-size: 70%;
-    }
+#button p {
+    margin: 5px;
+}
