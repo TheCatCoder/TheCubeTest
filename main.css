@@ -56,20 +56,10 @@ h1 {
     opacity: 1;
 }
 
-footer {
-    background: #5779D6;
-}
-
-
 /*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
 
 article > p::first-letter {
-    font-size: 130%;
-}
-
-table {
-    margin: auto;
-    text-align: center;
+    font-size: 120%;
 }
 
 article > p {
@@ -79,7 +69,7 @@ article > p {
 }
 
 #button {
-    max-width: 20%;
+    max-width: 180px;
     margin: auto;
     margin-top: 30px;
     margin-bottom: 25px;
@@ -91,4 +81,14 @@ article > p {
 
 #button p {
     margin: 5px;
+}
+
+footer {
+    background: #5779D6;
+    width: 80%;
+}
+
+table {
+    margin: auto;
+    text-align: center;
 }
