@@ -16,10 +16,6 @@
         width: 80%;
         text-align: center;
     }
-
-    main {
-        height: 100%;
-    }
     /*Below here, I'm styling my links*/
 
     a {
@@ -77,7 +73,7 @@
     }
 </style>
 
-<body>
+<body onresize="footerPush()" onload="footerPush()">
     <header>
         <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
         <i class="fa fa-cube up" style="font-size: 350%"></i>
@@ -86,13 +82,13 @@
             <p id="up"><a href="http://spandan22.github.io/TheCubeTest/">Home</a> &nbsp <a href="AboutMe.html">About</a></p>
         </nav>
     </header>
-    <Main>
+    <main id="main">
         <img src="Me%20at%20Home.jpg" alt="Picture of Me" width="20%">
         <h2>About Me</h2>
         <p>My name is Daniel Musser. I grew up and currently live in Utah. I love working with computers in many different ways. I created this website called "The Cube Test" as a school project. I originally came up with the idea to do it because a friend of mine texted me one day and was trying to remember how to walk someone through a personality test, called "The Cube Test". I thought it would be helpful to have a place where everybody can go and learn it if they want.</p>
         <h2>Other Interests</h2>
         <p>Apart from coding, I really enjoy playing the Violin and Guitar in my free time. I play in a multinational band called "Phonagraph Blue". Professionally, I work as a banker at Bank of the West, which is a bank based out of California.</p>
-    </Main>
+    </main>
 
     <footer>
         <table>
@@ -107,6 +103,20 @@
             </tr>
         </table>
     </footer>
+
+    <script>
+        /*Here is my javascript code that runs on any of the pages
+                where the main content is not long enough to push the footer to the bottom of the page.
+                This could use an if statement to check if the content is already long enough*/
+        function footerPush() {
+
+            var h = window.innerHeight - 268;
+            var ht = h + "px";
+            var x = document.getElementById("main");
+            x.style.height = ht;
+        }
+    </script>
+
 </body>
 
 </html>

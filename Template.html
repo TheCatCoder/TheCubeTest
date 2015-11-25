@@ -7,7 +7,7 @@
 <script src="main.js"></script>
 <link rel="stylesheet" href="main.css">
 
-<body>
+<body onresize="footerPush()" onload="footerPush()">
     <!--This is a template for creating additional pages for the cube test-->
     <header>
         <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
@@ -18,7 +18,7 @@
         </nav>
     </header>
 
-    <article>
+    <article id="main">
         <h3>Put Title Here</h3>
         <p>Put paragraphs here</p>
 
@@ -30,7 +30,7 @@
 
     </article>
 
-    <footer id="stickyFoot">
+    <footer>
         <table>
             <tr>
                 <td>Copyright Info</td>
@@ -45,9 +45,15 @@
     </footer>
 
     <script>
-
-
-
+        /*Here is my javascript code that runs on any of the pages
+        where the main content is not long enough to push the footer to the bottom of the page.
+        This could use an if statement to check if the content is already long enough*/
+        function footerPush() {
+        var h = window.innerHeight - 295;
+        var ht = h + "px";
+        var x = document.getElementById("main");
+        x.style.height = ht;
+        }
     </script>
 
 </body>

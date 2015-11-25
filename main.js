@@ -11,9 +11,8 @@ $(document).ready(function () {
             $("#hider").hide();
         }
     );
-    var bodyHeight = $("body").height();
-    var vwptHeight = $(window).height();
-    if (vwptHeight > bodyHeight) {
-        $("footer#stickyFoot").css("position", "absolute").css("bottom", 0);
-    }
+
 });
+
+
+
