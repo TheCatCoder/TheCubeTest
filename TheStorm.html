@@ -1,0 +1,71 @@
+<html lang="en">
+<meta charset="UTF-8">
+<title>The Cube Test</title>
+<link href='https://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="main.css">
+
+<body onload="footerPush()" onresize="footerPush()">
+    <!--This is a template for creating additional pages for the cube test-->
+    <header>
+        <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
+        <i class="fa fa-cube up" style="font-size: 350%"></i>
+
+        <nav>
+            <p id="up"><a href="http://spandan22.github.io/TheCubeTest/">Home</a> &nbsp <a href="AboutMe.html">About</a></p>
+        </nav>
+    </header>
+
+    <article id="main">
+       <img src="Desert%Hills.jpg" alt="" width="20%" margin-top="20px">
+        <h3>The Storm</h3>
+        <p>Is there a storm in your desert? If there is, I want you to picture where exactly it is in relation to you. Also, you need to have in mind how severe the storm is. Once you have those things in mind, write them down.</p>
+
+        <!--This is my Javascript button-->
+        <div id="button">
+            <a href="index.html"><p id="firstVisible">Evaluate</p>
+                <p id="hider">Ready?</p></a>
+        </div>
+
+    </article>
+
+    <footer>
+        <table>
+            <tr>
+                <td>Copyright Info</td>
+            </tr>
+            <tr>
+                <td>The content and code for this webpage was created by Daniel Musser</td>
+            </tr>
+            <tr>
+                <td>However, the Cube Test concept is not an original idea of the creator of this website.</td>
+            </tr>
+        </table>
+    </footer>
+
+    <script>
+        /* Here is my javascript code that runs on any of the pages
+        where the main content is not long enough to push the footer
+        to the bottom of the page */
+        function footerPush() {
+            var mainh = document.getElementById("main").clientHeight;
+            var mh = mainh + 100;
+            var wh = window.innerHeight;
+
+            if (wh > mh) {
+                var wh = wh - 295;
+                var ht = wh + "px";
+                var x = document.getElementById("main");
+                x.style.height = ht;
+            } else {
+                var x = document.getElementById("main");
+                x.style.height = "auto";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
