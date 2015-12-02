@@ -108,19 +108,18 @@
         /* Here is my javascript code that runs on any of the pages
                         where the main content is not long enough to push the footer to the bottom of the page */
         function footerPush() {
-
-            var mainh = document.getElementById("main").clientHeight;
-            var mh = mainh + 100;
+            var originalHeight = document.getElementById("main").clientHeight;
+            var mh = originalHeight + 265;
             var wh = window.innerHeight;
+
             if (wh > mh) {
-                //            alert("the height of the window is " + wh + "\n" + "the height of the main is " + mh); Just some code for testing.
-                var wh = wh - 265;
+                var wh = wh - 270;
                 var ht = wh + "px";
                 var x = document.getElementById("main");
                 x.style.height = ht;
             } else {
                 var x = document.getElementById("main");
-                x.style.height = mainh;
+                x.style.height = "auto";
             }
         }
     </script>

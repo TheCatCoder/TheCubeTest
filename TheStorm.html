@@ -50,12 +50,12 @@
         where the main content is not long enough to push the footer
         to the bottom of the page */
         function footerPush() {
-            var mainh = document.getElementById("main").clientHeight;
-            var mh = mainh + 100;
+            var originalHeight = document.getElementById("main").clientHeight;
+            var mh = originalHeight + 260;
             var wh = window.innerHeight;
 
             if (wh > mh) {
-                var wh = wh - 295;
+                var wh = wh - 265;
                 var ht = wh + "px";
                 var x = document.getElementById("main");
                 x.style.height = ht;
