@@ -7,6 +7,23 @@
 <script src="main.js"></script>
 <link rel="stylesheet" href="main.css">
 
+<style>
+.backgroundPicture {
+    margin: auto;
+    width: 60%;
+    height: 20%;
+}
+.textInside {
+    opacity: 0;
+    background-color: white;
+    height: 100%;
+    transition: opacity 0.5s;
+}
+.textInside:hover {
+    opacity: .6;
+}
+</style>
+
 <body onload="footerPush()" onresize="footerPush()">
     <!--This is a template for creating additional pages for the cube test-->
     <header>
@@ -23,8 +40,8 @@
         <p>When you thought of what your cube, and ladder looked like, the material that they were made from was one of the things that you thought of. This is important since the material that your elements are made from is one of the first things to evaluate after you've taken the test.</p>
         <p>Below, there are a couple pictures that you can hover over with your mouse to get an idea of what significance the materials in your desert have and how you could interpret those materials.</p>
 
-        <div id="backgroundPicture" style="background: WoodTexture.jpg">
-            <div class="textInside">Wood can be a </div>
+        <div class="backgroundPicture" style="background-image: url(WoodTexture.jpg);">
+            <div class="textInside">If your desert's cube or ladder were made out of natural materials, such as wood, this can indicate warm relationships or feelings of confort associated with those things.</div>
         </div>
 
         <!--This is my Javascript button-->
