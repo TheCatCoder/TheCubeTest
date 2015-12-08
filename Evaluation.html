@@ -1,0 +1,89 @@
+<html lang="en">
+<meta charset="UTF-8">
+<title>The Cube Test</title>
+<link href='https://fonts.googleapis.com/css?family=Geostar+Fill' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://cdn.jsdelivr.net/jquery/3.0.0-alpha1/jquery.min.js"></script>
+<script src="main.js"></script>
+<link rel="stylesheet" href="main.css">
+<style>
+    img {
+        width: 20%;
+        margin-top: 25px;
+    }
+    </style>
+
+<body onload="footerPush()" onresize="footerPush()">
+    <!--This is a template for creating additional pages for the cube test-->
+    <header>
+        <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
+        <i class="fa fa-cube up" style="font-size: 350%"></i>
+
+        <nav>
+            <p id="up"><a href="http://spandan22.github.io/TheCubeTest/">Home</a> &nbsp <a href="AboutMe.html">About</a></p>
+        </nav>
+    </header>
+
+    <article id="main">
+       <img src="Cube.jpeg" alt="Cube">
+        <h3>Interpreting the Cube</h3>
+        <p>The cube is a representation of your ego or the way you view yourself. Its closeness to you can indicate how self-aware you are, or how much you recognize your own view of yourself. The material your cube is made of can also indicate certain things about you. A guide to what various materials mean in this context can be found on the next page.</p>
+
+        <img src="Ladder.jpeg" alt="Ladder">
+        <h3>Interpreting the Ladder</h3>
+        <p>The ladder is a representation of your friends and family. Its closeness to you can indicate how close your relationships with those people are. The material your ladder is made of can also indicate certain things about your relationships with other people. A guide to what various materials mean in this context can be found on the next page.</p>
+
+        <img src="HorseHead.jpeg" alt="Horse">
+        <h3>Interpreting the Horse</h3>
+        <p>The Horse is a representation of your romantic relationships. Its closeness to you can indicate how close your relationship with your significant other is (or potential significant other). Whether the horse is carrying anything can also indicate various things that are open to interpretation.</p>
+
+        <img src="Desert%20Hills.jpeg" alt="Ladder">
+        <h3>Interpreting the Storm</h3>
+        <p>The storm is a representation of your anxieties. Its closeness to you can indicate how close you feel that your anxieties are (proximity in time). The storms intensity can indicate how troubling you feel that the problems in your life are.</p>
+
+        <!--This is my Javascript button-->
+        <div id="button">
+            <a href="MaterialEvaluation.html"><p id="firstVisible">Next Step?</p>
+                <p id="hider">Materials</p></a>
+        </div>
+
+    </article>
+
+    <footer>
+        <table>
+            <tr>
+                <td>Copyright Info</td>
+            </tr>
+            <tr>
+                <td>The content and code for this webpage was created by Daniel Musser</td>
+            </tr>
+            <tr>
+                <td>However, the Cube Test concept is not an original idea of the creator of this website.</td>
+            </tr>
+        </table>
+    </footer>
+
+    <script>
+        /* Here is my javascript code that runs on any of the pages
+        where the main content is not long enough to push the footer
+        to the bottom of the page */
+        function footerPush() {
+            var originalHeight = document.getElementById("main").clientHeight;
+            var mh = originalHeight + 260;
+            var wh = window.innerHeight;
+
+            if (wh > mh) {
+                var wh = wh - 265;
+                var ht = wh + "px";
+                var x = document.getElementById("main");
+                x.style.height = ht;
+            } else {
+                var x = document.getElementById("main");
+                x.style.height = "auto";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
