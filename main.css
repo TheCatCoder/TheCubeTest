@@ -125,13 +125,4 @@
             position: relative;
             bottom: 20px;
         }
-        .backgroundpicture {
-            height: 150px;
-            width: 300px;
-        }
-        .textinside {
-            font-size: 85%;
-            height: 120px;
-            padding: 1px;
-        }
     }

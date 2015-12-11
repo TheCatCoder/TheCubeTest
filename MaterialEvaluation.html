@@ -8,24 +8,38 @@
 <script src="main.js"></script>
 
 <style>
-.backgroundPicture {
-    width: 500px;
-    height: 130px;
-    margin: auto;
-    margin-top: 15px;
-    border: 8px groove grey;
-}
-.textInside {
-    opacity: 0;
-    height: 100px;
-    margin: auto;
-    padding: 15px;
-    background-color: white;
-    transition: opacity 0.5s;
-}
-.textInside:hover {
-    opacity: .6;
-}
+    .backgroundPicture {
+        width: 500px;
+        height: 130px;
+        margin: auto;
+        margin-top: 15px;
+        border: 8px groove grey;
+    }
+
+    .textInside {
+        opacity: 0;
+        height: 100px;
+        margin: auto;
+        padding: 15px;
+        background-color: white;
+        transition: opacity 0.5s;
+    }
+
+    .textInside:hover {
+        opacity: .6;
+    }
+
+    @media only screen and (max-width:700px) {
+        .backgroundpicture {
+            height: 150px;
+            width: 300px;
+        }
+        .textinside {
+            font-size: 85%;
+            height: 120px;
+            padding: 15px;
+        }
+    }
 </style>
 
 <body onload="footerPush()" onresize="footerPush()">
@@ -56,8 +70,10 @@
 
         <!--This is my Javascript button-->
         <div id="button">
-            <a href="AboutMe.html"><p id="firstVisible">About Me</p>
-                <p id="hider">And Thanks</p></a>
+            <a href="AboutMe.html">
+                <p id="firstVisible">About Me</p>
+                <p id="hider">And Thanks</p>
+            </a>
         </div>
 
     </article>
@@ -78,8 +94,8 @@
 
     <script>
         /* Here is my javascript code that runs on any of the pages
-        where the main content is not long enough to push the footer
-        to the bottom of the page */
+                where the main content is not long enough to push the footer
+                to the bottom of the page */
         function footerPush() {
             var originalHeight = document.getElementById("main").clientHeight;
             var mh = originalHeight + 260;
