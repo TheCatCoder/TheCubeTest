@@ -1,98 +1,128 @@
-html {
-    background: url(LightBackground.jpg);
-    background-size: cover;
-}
+    html {
+        background: url(LightBackground.jpg);
+        background-size: cover;
+    }
 
-body {
-    background: white;
-    opacity: 0.8;
-    margin: auto;
-    width: 80%;
-    text-align: center;
-}
+    body {
+        background: white;
+        opacity: 0.8;
+        margin: auto;
+        width: 80%;
+        text-align: center;
+    }
 
-article {
-    font-size: 140%;
-}
+    header h1 {
+        font-family: 'Geostar Fill', cursive;
+        font-size: 350%;
+    }
 
+    article {
+        font-size: 140%;
+    }
+    /*Below here, I'm styling my links*/
 
-/*Below here, I'm styling my links*/
+    a {
+        text-decoration: none;
+        color: white;
+    }
+    /*Here's my example of using a pseudo class selector*/
 
-a {
-    text-decoration: none;
-    color: white;
-}
+    a:hover {
+        text-decoration: underline;
+    }
+    /*This is where I use positioning to make my Home and About buttons look like they are inside of the header*/
 
+    .up {
+        font-size: 350%;
+        position: relative;
+        bottom: 30px;
+    }
 
-/*Here's my example of using a pseudo class selector*/
+    #up {
+        margin: auto;
+        font-size: 230%;
+        position: relative;
+        top: -25px;
+    }
 
-a:hover {
-    text-decoration: underline;
-}
+    header {
+        background: radial-gradient(circle, #1443C1, #819BE4);
+        height: 200px;
+        color: white;
+    }
 
+    h1 {
+        padding-top: 10px;
+        margin-top: 1px;
+        opacity: 1;
+    }
+    /*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
 
-/*This is where I use positioning to make my Home and About buttons look like they are inside of the header*/
-.up {
-    position: relative;
-    top: -30px;
-}
+    article > p::first-letter {
+        font-size: 120%;
+    }
 
-#up {
-    margin: auto;
-    font-size: 230%;
-    position: relative;
-    top: -25px;
-}
+    article > p {
+        font-size: 100%;
+        max-width: 70%;
+        margin: auto;
+    }
 
-header {
-    background: radial-gradient(circle, #1443C1, #819BE4);
-    height: 200px;
-    color: white;
-}
+    #button {
+        max-width: 200px;
+        margin: auto;
+        margin-top: 30px;
+        margin-bottom: 25px;
+        border: 8px outset #819BE4;
+        background-color: #1443C1;
+        color: white;
+        font-size: 130%;
+    }
 
-h1 {
-    padding-top: 10px;
-    margin-top: 1px;
-    opacity: 1;
-}
+    #button p {
+        margin: 5px;
+    }
 
-/*Right here, I stop the horse from messing up the header below it by using "overflow: auto", if the page gets too large*/
+    #button a:hover {
+        text-decoration: none;
+    }
 
-article > p::first-letter {
-    font-size: 120%;
-}
+    footer {
+        background: #5779D6;
+        width: 100%;
+    }
 
-article > p {
-    font-size: 100%;
-    max-width: 70%;
-    margin: auto;
-}
+    table {
+        margin: auto;
+        text-align: center;
+    }
 
-#button {
-    max-width: 200px;
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 25px;
-    border: 8px outset #819BE4;
-    background-color: #1443C1;
-    color: white;
-    font-size: 130%;
-}
-
-#button p {
-    margin: 5px;
-}
-
-#button a:hover {
-    text-decoration: none;
-}
-
-footer {
-    background: #5779D6;
-    width: 100%;
-}
-
-table {
-    margin: auto;
-    text-align: center;
-}
+    @media only screen and (max-width:700px) {
+        body {
+            width: 100%;
+        }
+        nav a {
+            display: inline;
+            position: relative;
+            bottom: 10px;
+        }
+        #up {
+            margin: auto;
+            font-size: 200%;
+            line-height: 70%;
+            position: relative;
+            top: 0px
+        }
+        header {
+            height: 155px;
+            color: white;
+        }
+        header h1 {
+            font-size: 230%;
+        }
+        .up {
+            font-size: 350%;
+            position: relative;
+            bottom: 20px;
+        }
+    }
