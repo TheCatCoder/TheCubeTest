@@ -29,8 +29,9 @@
     }
 
     .up {
+        font-size: 350%;
         position: relative;
-        top: -30px;
+        bottom: 30px;
     }
 
     #up {
@@ -38,6 +39,11 @@
         font-size: 230%;
         position: relative;
         top: -25px;
+    }
+
+    header h1 {
+        font-family: 'Geostar Fill', cursive;
+        font-size: 350%;
     }
 
     header {
@@ -71,12 +77,42 @@
         margin: auto;
         text-align: center;
     }
+
+    @media only screen and (max-width:700px) {
+        body {
+            width: 100%;
+        }
+        nav a {
+            display: inline;
+            position: relative;
+            bottom: 10px;
+        }
+        #up {
+            margin: auto;
+            font-size: 200%;
+            line-height: 70%;
+            position: relative;
+            top: 0px
+        }
+        header {
+            height: 155px;
+            color: white;
+        }
+        header h1 {
+            font-size: 230%;
+        }
+        .up {
+            font-size: 350%;
+            position: relative;
+            bottom: 20px;
+        }
+    }
 </style>
 
 <body onresize="footerPush()" onload="footerPush()">
     <header>
-        <h1 style="font-family: 'Geostar Fill', cursive; font-size: 350%">The Cube Test</h1>
-        <i class="fa fa-cube up" style="font-size: 350%"></i>
+        <h1>The Cube Test</h1>
+        <i class="fa fa-cube up"></i>
         <nav>
             <!--Right here is where I make my navigation elements. I don't do it exactly like W3 schools does it, but mine works perfectly fine and looks the way I want it to look, for now. Maybe you could give me your input about it.-->
             <p id="up"><a href="http://spandan22.github.io/TheCubeTest/">Home</a> &nbsp <a href="AboutMe.html">About</a></p>
